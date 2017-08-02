@@ -1,0 +1,41 @@
+<!Doctype html>
+<head>
+  <title>Your search ends here!</title>
+  <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+  <form>
+    <div id="listofgroceries">
+      <input type="checkbox" class="groceryitems" value="Halfvolle melk 2l">Halfvolle melk 2l<br>
+      <input type="checkbox" class="groceryitems" value="Brocolli">Brocolli<br>
+      <input type="checkbox" class="groceryitems" value="Magere yoghurt">Magere yoghurt<br>
+      <input type="checkbox" class="groceryitems" value="Winterpeen">Winterpeen<br>
+      <input type="checkbox" class="groceryitems" value="Sperziebonen">Sperziebonen<br>
+      <input type="checkbox" class="groceryitems" value="Tomaten">Tomaten<br>
+      <input type="checkbox" class="groceryitems" value="Uien">Uien<br>
+      <input type="checkbox" class="groceryitems" value="Knoflook">Knoflook<br>
+      <input type="checkbox" class="groceryitems" value="Bananen">Bananen<br>
+      <input type="checkbox" class="groceryitems" value="Appel">Appel<br>
+    </div>
+    </form>
+    <form>
+    <div id="listofshops">
+      <input type="checkbox" class="Shoplist" value="Albert-Heijn">Albert-Heijn<br>
+      <input type="checkbox" class="Shoplist" value="Dirk">Dirk<br>
+      <input type="checkbox" class="Shoplist" value="Jumbo">Jumbo<br>
+      <input type="checkbox" class="Shoplist" value="Spar">Spar<br>
+      <input type="checkbox" class="Shoplist" value="Plus">Plus<br>
+    </div>
+  </form>
+  <button id="getitem" onclick="showrate()">Show Rates</button>
+  <table id="tableofresults">
+    <tr>
+      <th>S No</th>
+      <th>Requested Item</th>
+      <th>Found Item</th>
+      <th>Best Shop</th>
+      <th>Best price</th>
+    </tr>
+  </table>
+  <script src="script.js"></script>
+</body>
