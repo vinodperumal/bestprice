@@ -60,7 +60,7 @@ function findinah(itemname){
   $(document).ready(function(){
 
      // jQuery methods go here...
-     $(".navigation-search__input-container clear_input_div").val(itemname);
+     $("*").$("[name='rq']");
 
   });
 
