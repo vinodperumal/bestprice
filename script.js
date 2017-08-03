@@ -54,11 +54,14 @@ function openshoplink(itemname,shopname){
 
 function findinah(itemname){
 
-  var url = "https://www.ah.nl/?gclid=CPDgkde2udUCFW0R0wod6KsHzw";
+  var url = "https://www.ah.nl/";
   var win = window.open(url, '_blank');
   win.focus();
-  searchfield = document.getElementsByClassName('paragraph--1 navigation-search__input');
-  searchfield.innerHTML = itemname;
+  $(document).ready(function(){
 
+     // jQuery methods go here...
+     $(".navigation-search__input-container clear_input_div").val(itemname);
+
+  });
 
 }
