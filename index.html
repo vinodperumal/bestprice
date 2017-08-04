@@ -5,24 +5,13 @@
 </head>
 <body>
   <form id="getuserdata">
-    <div id="listofgroceries">
-      <input type="checkbox" class="groceryitems" value="Halfvolle melk 2l">Halfvolle melk 2l<br>
-      <input type="checkbox" class="groceryitems" value="Brocolli">Brocolli<br>
-      <input type="checkbox" class="groceryitems" value="Magere yoghurt">Magere yoghurt<br>
-      <input type="checkbox" class="groceryitems" value="Winterpeen">Winterpeen<br>
-      <input type="checkbox" class="groceryitems" value="Sperziebonen">Sperziebonen<br>
-      <input type="checkbox" class="groceryitems" value="Tomaten">Tomaten<br>
-      <input type="checkbox" class="groceryitems" value="Uien">Uien<br>
-      <input type="checkbox" class="groceryitems" value="Knoflook">Knoflook<br>
-      <input type="checkbox" class="groceryitems" value="Bananen">Bananen<br>
-      <input type="checkbox" class="groceryitems" value="Appel">Appel<br>
-    </div>
-    <div id="listofshops">
-      <input type="checkbox" class="Shoplist" onchange="showproduct()" id="Albert-Heijn" value="Albert-Heijn">Albert-Heijn<br>
-      <input type="checkbox" class="Shoplist" value="Dirk">Dirk<br>
-      <input type="checkbox" class="Shoplist" value="Jumbo">Jumbo<br>
-      <input type="checkbox" class="Shoplist" value="Spar">Spar<br>
-      <input type="checkbox" class="Shoplist" value="Plus">Plus<br>
+    <div>
+      <input id="searchitem" placeholder="Enter item to search"></input>
+      <input type="checkbox" class="Shoplist" onchange="showproduct(value,this)" value="Albert-Heijn">Albert-Heijn
+      <input type="checkbox" class="Shoplist" onchange="showproduct(value,this)" value="Dirk">Dirk
+      <input type="checkbox" class="Shoplist" onchange="showproduct(value,this)" value="Jumbo">Jumbo
+      <input type="checkbox" class="Shoplist" value="Spar">Spar
+      <input type="checkbox" class="Shoplist" value="Plus">Plus
     </div>
   </form>
   <div id="showshops">
@@ -30,7 +19,7 @@
       <iframe id="ahframe" class="shopiframe" src="https://www.ah.nl/">alternative content for browsers which do not support iframe.</iframe>
     </div>
     <div id="showDirk">
-      <iframe class="shopiframe" src="https://boodschappen.dirk.nl/">alternative content for browsers which do not support iframe.</iframe>
+      <iframe id="dirkframe" class="shopiframe" src="https://boodschappen.dirk.nl/">alternative content for browsers which do not support iframe.</iframe>
     </div>
   </div>
   <script src="script.js"></script>
