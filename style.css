@@ -1,31 +1,72 @@
 body{
-  background-color:black;
+  color : white;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+#getuserdata
+{
+    display: block;
+    width : 100%;
 }
 #listofgroceries
 {
-  background-color: green;
+  background-color: #263a72;
   width: 50%;
+  height : 50%;
   float: left;
+  display: list-item;
+  margin : 5px 5px 5px 5px;
+
 }
 #listofshops
 {
-  background-color: blue;
+  background-color: #004953;
+  float: right;
   width: 50%;
-  float: left;
+  height : 50%;
+  display: list-item;
+  margin : 5px 5px 5px 5px;
 }
-#getitem
+#showshops
 {
-  background-color: orange;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  display : none;
+  top : 51%;
+  width: 100%;
+  height: calc(100vh - 30px);
+  background-color: #d5d1b5;
 }
-table, th, td {
-    border: 1px solid red;
-    border-collapse: collapse;
-    color: white;
+.groceryitems, .Shoplist
+{
+  margin: 5px 5px 5px 5px;
+}
+
+iframe {
+
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+
+  -moz-box-shadow: 4px 4px 14px #000;
+  -webkit-box-shadow: 4px 4px 14px #000;
+  box-shadow: 4px 4px 14px #000;
+  width:100%;
+  height: calc(100vh - 30px);
+  display: block;
+
+}
+
+#showAH
+{
+  display : none;
+  float: left;
+  width : 50%;
+}
+
+#showDirk
+{
+  display : none;
+  float: right;
+  width : 50%;
 }
