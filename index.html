@@ -9,17 +9,24 @@
       <input id="searchitem" placeholder="Enter item to search"></input>
       <input type="checkbox" class="Shoplist" onchange="showproduct(value,this)" value="Albert-Heijn">Albert-Heijn
       <input type="checkbox" class="Shoplist" onchange="showproduct(value,this)" value="Dirk">Dirk
+      <input type="checkbox" class="Shoplist" onchange="showproduct(value,this)" value="Vomar">Vomar
+      <input type="checkbox" class="Shoplist" onchange="showproduct(value,this)" value="Coop">Coop
       <input type="checkbox" class="Shoplist" onchange="showproduct(value,this)" value="Jumbo">Jumbo
-      <input type="checkbox" class="Shoplist" value="Spar">Spar
-      <input type="checkbox" class="Shoplist" value="Plus">Plus
+      <input type="checkbox" class="Shoplist" onchange="showproduct(value,this)" value="Spar">Spar
+      <input type="checkbox" class="Shoplist" onchange="showproduct(value,this)" value="Plus">Plus
+      <input type="checkbox" class="Shoplist" onchange="showproduct(value,this)" value="Select All">Select All
+      <input type="checkbox" class="Shoplist" onchange="showproduct(value,this)" value="Select None">Select None
     </div>
   </form>
   <div id="showshops">
-    <div id="showAH">
-      <iframe id="ahframe" class="shopiframe" src="https://www.ah.nl/">alternative content for browsers which do not support iframe.</iframe>
+    <div id="showAlbert-Heijn">
+      <iframe id="Albert-Heijnframe" class="shopiframe" src="https://www.ah.nl/">alternative content for browsers which do not support iframe.</iframe>
     </div>
     <div id="showDirk">
-      <iframe id="dirkframe" class="shopiframe" src="https://boodschappen.dirk.nl/">alternative content for browsers which do not support iframe.</iframe>
+      <iframe id="Dirkframe" class="shopiframe" src="https://boodschappen.dirk.nl/">alternative content for browsers which do not support iframe.</iframe>
+    </div>
+    <div id="showVomar">
+      <iframe id="Vomarframe" class="shopiframe" src="https://www.vomar.nl/">alternative content for browsers which do not support iframe.</iframe>
     </div>
   </div>
   <script src="script.js"></script>
