@@ -1,4 +1,5 @@
 function showproduct(shopname,checkbox){
+
   console.log("in showproduct");
 
   let searchitem = document.getElementById('searchitem').value;
@@ -57,16 +58,14 @@ function showproduct(shopname,checkbox){
         break;
 
       case "Select All" :
-        selectallornone('true')
+        selectallornone(true)
         break;
 
       case "Select None" :
-        selectallornone('false')
+        selectallornone(false)
         break;
 
-
       default :
-
         console.log('none to close');
         break;
 
@@ -77,11 +76,12 @@ function showproduct(shopname,checkbox){
   }else{
     alert ("please provide an item to search");
   }
-}//end of if
-}//end of function
+
+}//end of function showproduct
 
 function showframe(searchstring,shopname){
 
+  console.log("in showframe");
   var frame = shopname + 'frame';
   var show = 'show' + shopname;
   console.log(searchstring);
@@ -95,6 +95,7 @@ function showframe(searchstring,shopname){
 
 function opennewindow(searchstring){
 
+  console.log("in opennewindow");
   console.log(searchstring);
   window.open(searchstring,'_blank');
 
@@ -102,12 +103,36 @@ function opennewindow(searchstring){
 
 function uncheck(shopname){
 
-  var show = 'show' + shopname;
-  document.getElementById(show).style.display = 'inline';
+  console.log('in uncheck');
+  switch(shopname){
+
+    case "Albert-Heijn" :
+
+      document.getElementById('Albert-Heijn').style.display = 'none';
+      break;
+
+    case "Dirk" :
+
+      document.getElementById('Dirk').style.display = 'none';
+      break;
+
+    case "Vomar" :
+
+      document.getElementById('Vomar').style.display = 'none';
+      break;
+
+    default :
+
+      document.getElementById('Albert-Heijn').style.display = 'none';
+      document.getElementById('Dirk').style.display = 'none';
+      document.getElementById('Vomar').style.display = 'none';
+      resetall();
+
+    }
 }
 
 function selectallornone(bool){
-
+  console.log("in selectallornone");
   checkboxes = document.getElementsByClassName('Shoplist');
   for(var i=0, n=checkboxes.length;i<n;i++) {
     console.log(checkboxes[i].value);
@@ -116,3 +141,15 @@ function selectallornone(bool){
   }
 
 }
+
+function resetall(){
+    console.log("in resetall");
+    document.getElementById('Albert-Heijn').checked = false;
+    document.getElementById('Dirk').checked = false;
+    document.getElementById('Vomar').checked = false;
+    document.getElementById('Coop').checked = false;
+    document.getElementById('Plus').checked = false;
+    document.getElementById('Spar').checked = false;
+    document.getElementById('Select All').checked = false;
+    document.getElementById('searchitem').value = '';
+ }

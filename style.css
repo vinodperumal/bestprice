@@ -13,15 +13,7 @@ body{
   margin : 5px 5px 5px 5px;
 
 }
-#listofshops
-{
-  background-color: #004953;
-  float: right;
-  width: 50%;
-  height : 50%;
-  display: list-item;
-  margin : 5px 5px 5px 5px;
-}
+
 #showshops
 {
   display : none;
@@ -30,7 +22,7 @@ body{
   height: calc(100vh - 30px);
   background-color: #d5d1b5;
 }
-.groceryitems, .Shoplist
+.groceryitems, .Shoplist, .Multiple
 {
   margin: 5px 5px 5px 5px;
 }
