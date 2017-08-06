@@ -108,24 +108,20 @@ function uncheck(shopname){
 
     case "Albert-Heijn" :
 
-      document.getElementById('Albert-Heijn').style.display = 'none';
+      document.getElementById('showAlbert-Heijn').style.display = 'none';
       break;
 
     case "Dirk" :
 
-      document.getElementById('Dirk').style.display = 'none';
+      document.getElementById('showDirk').style.display = 'none';
       break;
 
     case "Vomar" :
 
-      document.getElementById('Vomar').style.display = 'none';
+      document.getElementById('showVomar').style.display = 'none';
       break;
 
     default :
-
-      document.getElementById('Albert-Heijn').style.display = 'none';
-      document.getElementById('Dirk').style.display = 'none';
-      document.getElementById('Vomar').style.display = 'none';
       resetall();
 
     }
@@ -144,6 +140,9 @@ function selectallornone(bool){
 
 function resetall(){
     console.log("in resetall");
+    document.getElementById('showAlbert-Heijn').style.display = 'none';
+    document.getElementById('showDirk').style.display = 'none';
+    document.getElementById('showVomar').style.display = 'none';
     document.getElementById('Albert-Heijn').checked = false;
     document.getElementById('Dirk').checked = false;
     document.getElementById('Vomar').checked = false;
