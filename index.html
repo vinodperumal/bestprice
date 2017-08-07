@@ -1,13 +1,13 @@
 <!Doctype html>
 <head>
   <title>Your search ends here!</title>
+  <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="initialize()">
   <form id="getuserdata">
-    <div>
-      <input id="searchitem" placeholder="Enter item to search"></input>
-      <input id="postcode" placeholder="Enter postcode here"></input>
+    <div id="grocerylist">
+      <input id="searchitem" placeholder="Enter item to search">
       <input id="Albert-Heijn" type="checkbox" class="Shoplist" onchange="showproduct(value,this)" value="Albert-Heijn">Albert-Heijn
       <input id="Dirk" type="checkbox" class="Shoplist" onchange="showproduct(value,this)" value="Dirk">Dirk
       <input id="Vomar" type="checkbox" class="Shoplist" onchange="showproduct(value,this)" value="Vomar">Vomar
@@ -21,15 +21,19 @@
   </form>
   <div id="showshops">
     <div id="showAlbert-Heijn">
-      <iframe id="Albert-Heijnframe" class="shopiframe" src="https://www.ah.nl/">alternative content for browsers which do not support iframe.</iframe>
+      <iframe id="Albert-Heijnframe" class="shopiframe">alternative content for browsers which do not support iframe.</iframe>
     </div>
     <div id="showDirk">
-      <iframe id="Dirkframe" class="shopiframe" src="https://boodschappen.dirk.nl/">alternative content for browsers which do not support iframe.</iframe>
+      <iframe id="Dirkframe" class="shopiframe">alternative content for browsers which do not support iframe.</iframe>
     </div>
     <div id="showVomar">
-      <iframe id="Vomarframe" class="shopiframe" src="https://www.vomar.nl/">alternative content for browsers which do not support iframe.</iframe>
+      <iframe id="Vomarframe" class="shopiframe">alternative content for browsers which do not support iframe.</iframe>
     </div>
   </div>
+  <div id="findnearbyshops">
+    <input id="postcode" placeholder="Enter postcode here">
+    <button onclick="addScript()">Show</button>
+  </div>
+  <div id="map"></div>
   <script src="script.js"></script>
 </body>
-//AIzaSyA3mMkI7Fxn-Ph9m_sTX83249fEAqG-w-s 
